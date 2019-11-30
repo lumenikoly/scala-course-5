@@ -1,6 +1,6 @@
-package task_1.Fish
+package Animals.Fish
 
-import task_1.Animal
+import Animals.Animal
 
 trait Fish extends Animal {
   override def toString: String = "Fish"

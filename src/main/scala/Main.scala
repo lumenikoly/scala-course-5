@@ -1,7 +1,7 @@
-import task_1.Animal
-import task_1.Cat.{Cat, Lion}
-import task_1.Fish.{Fish, Salmon, Shark}
-import task_1.Snake.{Cobra, Snake}
+import Animals.Animal
+import Animals.Cat.{Cat, Lion}
+import Animals.Fish.{Fish, Salmon, Shark}
+import Animals.Snake.{Cobra, Snake}
 
 object Main extends App {
 
@@ -15,10 +15,10 @@ object Main extends App {
           || $int |
           |-----""".stripMargin)
   }
+
   5.prettyPrint()
 
   //3
-  trait ZooKeeper[-A]
 
   def cleanFish(zk: ZooKeeper[Fish]): Unit = println("Fish room cleaned")
   def cleanSnake(zk: ZooKeeper[Snake]): Unit = println("Snake room cleaned")
@@ -28,7 +28,7 @@ object Main extends App {
   val catKeeper = new ZooKeeper[Cat] {}
   val fishKeeper = new ZooKeeper[Fish] {}
   val snakeKeeper = new ZooKeeper[Snake] {}
-  
+
   cleanCat(catKeeper)
   cleanCat(animalKeeper)
 

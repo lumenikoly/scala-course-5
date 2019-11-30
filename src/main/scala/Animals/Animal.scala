@@ -1,4 +1,4 @@
-package task_1
+package Animals
 
 trait Animal {
 
